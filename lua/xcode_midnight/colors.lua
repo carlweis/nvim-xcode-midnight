@@ -1,42 +1,63 @@
 -- lua/xcode_midnight/colors.lua
+-- lua/xcode_midnight/colors.lua
+
 local colors = {
+    -- General Colors
     foreground = "#FFFFFF",
     background = "#000000",
     selection_background = "#333333",
     selection_foreground = "#FFFFFF",
     cursor = "#FFFFFF",
     cursor_text_color = "#000000",
+    comment = "#00FF00",
+    string = "#FF4500",
+    number = "#01fa95",
+    keyword = "#FF00FF",
+    constant = "#A6E3A1",
 
-    -- Normal colors
-    color0 = "#000000",
-    color1 = "#FF4500",
-    color2 = "#01fa95",  -- Custom green
-    color3 = "#FFA500",
-    color4 = "#1E90FF",
-    color5 = "#FF00FF",
-    color6 = "#00BFFF",
-    color7 = "#D3D3D3",
+    -- HTML Colors
+    html_tag = "#FF4500",
+    html_attribute = "#FFA500",
+    html_value = "#89b4fa",
 
-    -- Bright colors
-    color8 = "#696969",
-    color9 = "#FF6347",
-    color10 = "#01fa95",  -- Custom bright green
-    color11 = "#FFD700",
-    color12 = "#00BFFF",
-    color13 = "#FF00FF",
-    color14 = "#00CED1",
-    color15 = "#FFFFFF",
+    -- CSS Colors
+    css_selector = "#01fa95",
+    css_property = "#cba6f7",
+    css_value = "#FFD700",
+    css_class = "#89b4fa",
+    css_id = "#FF6347",
 
-    -- Specific highlights
-    comment = "#4cd156",
-    string = "#ff4546",
-    keyword = "#de37a5",
-    number = "#8a87ff",
-    type_declaration = "#6bdfff",
-    function_name = "#4fb0cc",
-    constant = "#ffffff",
-    preprocessor = "#ffffff",
-    identifier = "#ffffff",
+    -- JavaScript and JSX Colors
+    js_function = "#01fa96",
+    js_keyword = "#FF00FF",
+    js_variable = "#A7DFEF",
+    jsx_component = "#FF4500",
+    jsx_tag = "#FFD700",
+    jsx_attribute = "#cba6f7",
+
+    -- Ruby Colors
+    ruby_method = "#FF6347",
+    ruby_keyword = "#FFA500",
+    ruby_symbol = "#87CEFA",
+
+    -- ERB Colors
+    erb_tag = "#FFD700",
+    erb_delimiter = "#FF4500",
+
+    -- Slim Colors
+    slim_tag = "#32CD32",
+    slim_attribute = "#FFD700",
+    slim_delimiter = "#FF4500",
+
+    -- Python Colors
+    python_function = "#FFA500",
+    python_keyword = "#FF00FF",
+    python_builtin = "#87CEFA",
+
+    -- SQL Colors
+    sql_keyword = "#FF00FF",
+    sql_function = "#89b4fa",
+    sql_identifier = "#A7DFEF",
 }
 
 return colors
