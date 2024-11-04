@@ -9,27 +9,27 @@ local colors = {
 
     -- Normal colors
     color0 = "#000000",
-    color1 = "#FF4500",
-    color2 = "#01fa95",  -- Custom green
-    color3 = "#FFA500",
-    color4 = "#1E90FF",
-    color5 = "#FF00FF",
-    color6 = "#00BFFF",
-    color7 = "#D3D3D3",
+    color1 = "#ec9059",
+    color2 = "#01fa95",
+    color3 = "#ec9059",
+    color4 = "#00b1ff",
+    color5 = "#de37a6",
+    color6 = "#6ae0fe",
+    color7 = "#ffffff",
 
     -- Bright colors
-    color8 = "#696969",
-    color9 = "#FF6347",
-    color10 = "#01fa95",  -- Custom bright green
-    color11 = "#FFD700",
-    color12 = "#00BFFF",
-    color13 = "#FF00FF",
-    color14 = "#00CED1",
-    color15 = "#FFFFFF",
+    color8 = "#000000",
+    color9 = "#ea9059",
+    color10 = "#01fa95",
+    color11 = "#ec9059",
+    color12 = "#00b1ff",
+    color13 = "#de37a6",
+    color14 = "#6ae0fe",
+    color15 = "#ffffff",
 
     -- Specific highlights
     comment = "#4cd156",
-    string = "#ff4546",
+    string = "#ff4547",
     keyword = "#de37a5",
     number = "#8a87ff",
     type_declaration = "#6bdfff",
