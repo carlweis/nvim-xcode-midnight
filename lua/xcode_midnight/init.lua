@@ -4,6 +4,9 @@ local M = {}
 function M.setup()
   local colors = require("xcode_midnight.colors")
 
+   -- Expose colors globally for user access
+  _G.XcodeMidnightColors = colors
+
   -- Define highlights
   vim.cmd("highlight Normal        guifg=" .. colors.foreground .. " guibg=" .. colors.background)
   vim.cmd("highlight Comment       guifg=" .. colors.comment)
