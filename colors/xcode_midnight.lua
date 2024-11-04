@@ -21,5 +21,8 @@ vim.cmd("highlight Constant guifg=" .. colors.constant)
 vim.cmd("highlight PreProc guifg=" .. colors.preprocessor)
 vim.cmd("highlight Identifier guifg=" .. colors.identifier)
 
--- Add any additional highlights here
+-- Language specific highlights
+
+-- Ruby
+vim.cmd("highlight rubyInstanceVariable guifg=" .. colors.ruby_instance_variable)
 

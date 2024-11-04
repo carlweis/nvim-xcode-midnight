@@ -38,6 +38,10 @@ local colors = {
     constant = "#ffffff",
     preprocessor = "#ffffff",
     identifier = "#ffffff",
+
+    -- Ruby
+    ruby_instance_variable = "#00b1ff",
+
 }
 
 return colors
