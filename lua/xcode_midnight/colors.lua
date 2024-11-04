@@ -28,11 +28,11 @@ local colors = {
     color15 = "#FFFFFF",
 
     -- Specific highlights
-    comment = "#00FF00",
-    string = "#FF4500",
-    keyword = "#FF00FF",
-    number = "#1E90FF",
-    type_declaration = "#00BFFF",
+    comment = "#4cd156",
+    string = "#ff4546",
+    keyword = "#de37a5",
+    number = "#8a87ff",
+    type_declaration = "#6bdfff",
     function_name = "#00FF00",
     constant = "#00FF00",
     preprocessor = "#FFA500",
