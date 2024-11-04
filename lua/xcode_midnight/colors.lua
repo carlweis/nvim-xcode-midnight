@@ -33,10 +33,10 @@ local colors = {
     keyword = "#de37a5",
     number = "#8a87ff",
     type_declaration = "#6bdfff",
-    function_name = "#00FF00",
-    constant = "#00FF00",
-    preprocessor = "#FFA500",
-    identifier = "#00FF00",
+    function_name = "#4fb0cc",
+    constant = "#ffffff",
+    preprocessor = "#ffffff",
+    identifier = "#ffffff",
 }
 
 return colors
