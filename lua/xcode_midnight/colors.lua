@@ -4,18 +4,19 @@ local colors = {
     background = "#000000",
     selection_background = "#333333",
     selection_foreground = "#FFFFFF",
+    split = "#1A1A1A",
     cursor = "#FFFFFF",
     cursor_text_color = "#000000",
 
     -- Normal colors
-    color0 = "#000000",
-    color1 = "#ec9059",
-    color2 = "#01fa95",
-    color3 = "#ec9059",
-    color4 = "#00b1ff",
-    color5 = "#de37a6",
-    color6 = "#6ae0fe",
-    color7 = "#ffffff",
+    color0 = "#000000", -- black
+    color1 = "#ec9059", -- red
+    color2 = "#01fa95", -- green
+    color3 = "#ec9059", -- yellow
+    color4 = "#00b1ff", -- blue
+    color5 = "#de37a6", -- magenta
+    color6 = "#6ae0fe", -- cyan
+    color7 = "#ffffff", -- white
 
     -- Bright colors
     color8 = "#000000",
