@@ -35,6 +35,7 @@ function M.setup()
         ["@constant.ruby"] = { fg = colors.constant },
         ["@variable.ruby"] = { fg = colors.variable },
         ["@symbol.ruby"] = { fg = colors.number },
+        ["@field.ruby"] = { bg = colors.instance_variable },
 
         -- HTML/ERB
         ["@tag"] = { fg = colors.keyword },

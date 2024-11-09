@@ -10,15 +10,15 @@ local colors = {
     cursor_text = "#000000",
 
     -- Syntax colors
-    keyword = "#FF7AB2",
-    type = "#4AA2F7",
-    constant = "#DE35A6",
-    number = "#6AE0FE",
-    string = "#00B1FF",
-    comment = "#EA9059",
-    function_name = "#01FA95",
-    identifier = "#01FA95",
-    variable = "#DE37A6",
+    keyword = "#de37a5",
+    type = "#11f995",
+    constant = "#00b1ff",
+    number = "#8a88ff",
+    string = "#ff4547",
+    comment = "#4ad157",
+    function_name = "#4db0cb",
+    identifier = "#4fb0cc",
+    variable = "#4fb0cc",
     preprocessor = "#6AE0FE"
 }
 
