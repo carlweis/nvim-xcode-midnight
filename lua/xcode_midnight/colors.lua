@@ -41,8 +41,6 @@ local colors = {
     instance_variable = "#00b1ff",
 
     -- Ruby
-    ruby_instance_variable = "#00b1ff",
-
 }
 
 return colors
