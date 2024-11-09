@@ -19,7 +19,8 @@ local colors = {
     function_name = "#4db0cb",
     identifier = "#4fb0cc",
     variable = "#4fb0cc",
-    preprocessor = "#6AE0FE"
+    preprocessor = "#6AE0FE",
+    instance_variable = "#00b1ff"
 }
 
 return colors

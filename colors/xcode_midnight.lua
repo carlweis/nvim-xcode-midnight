@@ -1,12 +1,12 @@
 -- Language-specific TreeSitter highlights
 local colors = {
-  type_declaration = "#4AA2F7",
-  keyword = "#FF7AB2",
+  type_declaration = "#01fa95",
+  keyword = "#df38a5",
   constant = "#DE35A6",
-  number = "#6AE0FE",
-  string = "#00B1FF",
-  instance_variable = "#333333",
-  identifier = "#01FA95"
+  number = "#8b86ff",
+  string = "#ff4548",
+  instance_variable = "#00b1ff",
+  identifier = "#4fb1cb"
 }
 
 -- Modern highlight group definitions using vim.api
