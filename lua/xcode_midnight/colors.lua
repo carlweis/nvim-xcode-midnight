@@ -33,11 +33,12 @@ local colors = {
     string = "#ff4547",
     keyword = "#de37a5",
     number = "#8a87ff",
-    type_declaration = "#6bdfff",
+    type_declaration = "#06fb94",
     function_name = "#4fb0cc",
     constant = "#ffffff",
     preprocessor = "#ffffff",
     identifier = "#ffffff",
+    instance_variable = "#00b1ff",
 
     -- Ruby
     ruby_instance_variable = "#00b1ff",
