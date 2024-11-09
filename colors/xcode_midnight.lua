@@ -1,78 +1,48 @@
--- colors/xcode_midnight.lua
-local colors = require("xcode_midnight.colors")
+-- Language-specific TreeSitter highlights
+local colors = {
+  type_declaration = "#4AA2F7",
+  keyword = "#FF7AB2",
+  constant = "#DE35A6",
+  number = "#6AE0FE",
+  string = "#00B1FF",
+  instance_variable = "#333333",
+  identifier = "#01FA95"
+}
 
--- Define the colorscheme
-vim.cmd("highlight clear")
-if vim.fn.exists("syntax_on") then
-  vim.cmd("syntax reset")
+-- Modern highlight group definitions using vim.api
+local function setup_highlights()
+  -- General
+  vim.api.nvim_set_hl(0, "@keyword", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@string", { fg = colors.string })
+  vim.api.nvim_set_hl(0, "@constant", { fg = colors.constant })
+  vim.api.nvim_set_hl(0, "@number", { fg = colors.number })
+  vim.api.nvim_set_hl(0, "@type", { fg = colors.type_declaration })
+  vim.api.nvim_set_hl(0, "@variable", { fg = colors.identifier })
+
+  -- Ruby
+  vim.api.nvim_set_hl(0, "@type.ruby", { fg = colors.type_declaration })
+  vim.api.nvim_set_hl(0, "@keyword.ruby", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@constant.ruby", { fg = colors.constant })
+  vim.api.nvim_set_hl(0, "@symbol.ruby", { fg = colors.number })
+  vim.api.nvim_set_hl(0, "@string.ruby", { fg = colors.string })
+  vim.api.nvim_set_hl(0, "@variable.ruby", { fg = colors.identifier })
+  vim.api.nvim_set_hl(0, "@field.ruby", { bg = colors.instance_variable })
+
+  -- HTML
+  vim.api.nvim_set_hl(0, "@tag.html", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@tag.delimiter.html", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@tag.attribute.html", { fg = colors.identifier })
+
+  -- ERB
+  vim.api.nvim_set_hl(0, "@embed.ruby", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@keyword.erb", { fg = colors.keyword })
+  vim.api.nvim_set_hl(0, "@string.erb", { fg = colors.string })
+
+  -- CSS
+  vim.api.nvim_set_hl(0, "@property.css", { fg = colors.identifier })
+  vim.api.nvim_set_hl(0, "@type.css", { fg = colors.type_declaration })
+  vim.api.nvim_set_hl(0, "@number.css", { fg = colors.number })
+  vim.api.nvim_set_hl(0, "@string.css", { fg = colors.string })
 end
 
-vim.g.colors_name = "xcode_midnight"
-
--- Set highlights using color definitions
-vim.cmd("highlight Normal guifg=" .. colors.foreground .. " guibg=" .. colors.background)
-vim.cmd("highlight Comment guifg=" .. colors.comment)
-vim.cmd("highlight String guifg=" .. colors.string)
-vim.cmd("highlight Keyword guifg=" .. colors.keyword)
-vim.cmd("highlight Number guifg=" .. colors.number)
-vim.cmd("highlight Type guifg=" .. colors.type_declaration)
-vim.cmd("highlight Function guifg=" .. colors.function_name)
-vim.cmd("highlight Constant guifg=" .. colors.constant)
-vim.cmd("highlight PreProc guifg=" .. colors.preprocessor)
-vim.cmd("highlight Identifier guifg=" .. colors.identifier)
-
--- Language-specific highlights
-
--- Ruby
-vim.cmd("highlight rubyClass guifg=" .. colors.type_declaration)
-vim.cmd("highlight rubyModule guifg=" .. colors.keyword)
-vim.cmd("highlight rubyConstant guifg=" .. colors.constant)
-vim.cmd("highlight rubySymbol guifg=" .. colors.number)
-vim.cmd("highlight rubyStringDelimiter guifg=" .. colors.string)
-vim.cmd("highlight rubyInstanceVariable guibg=" .. colors.instance_variable)
-
--- HTML
-vim.cmd("highlight htmlTag guifg=" .. colors.keyword)
-vim.cmd("highlight htmlEndTag guifg=" .. colors.keyword)
-vim.cmd("highlight htmlTagName guifg=" .. colors.type_declaration)
-vim.cmd("highlight htmlArg guifg=" .. colors.identifier)
-vim.cmd("highlight htmlLink guifg=" .. colors.string .. " gui=underline")
-
--- JavaScript
-vim.cmd("highlight jsFunction guifg=" .. colors.function_name)
-vim.cmd("highlight jsFuncName guifg=" .. colors.function_name)
-vim.cmd("highlight jsIdentifier guifg=" .. colors.identifier)
-vim.cmd("highlight jsBoolean guifg=" .. colors.constant)
-vim.cmd("highlight jsNumber guifg=" .. colors.number)
-vim.cmd("highlight jsString guifg=" .. colors.string)
-
--- Python
-vim.cmd("highlight pythonBuiltinFunc guifg=" .. colors.function_name)
-vim.cmd("highlight pythonClass guifg=" .. colors.type_declaration)
-vim.cmd("highlight pythonFunction guifg=" .. colors.function_name)
-vim.cmd("highlight pythonString guifg=" .. colors.string)
-vim.cmd("highlight pythonNumber guifg=" .. colors.number)
-vim.cmd("highlight pythonBoolean guifg=" .. colors.constant)
-
--- Slim (for embedded Ruby syntax)
-vim.cmd("highlight slimRubyClass guifg=" .. colors.type_declaration)
-vim.cmd("highlight slimRubyId guifg=" .. colors.identifier)
-vim.cmd("highlight slimRubyString guifg=" .. colors.string)
-vim.cmd("highlight slimRubyComment guifg=" .. colors.comment)
-vim.cmd("highlight slimRubySymbol guifg=" .. colors.number)
-
--- ERB
-vim.cmd("highlight erbTag guifg=" .. colors.keyword)
-vim.cmd("highlight erbDelimiter guifg=" .. colors.keyword)
-vim.cmd("highlight erbMethod guifg=" .. colors.function_name)
-vim.cmd("highlight erbComment guifg=" .. colors.comment)
-vim.cmd("highlight erbString guifg=" .. colors.string)
-
--- React (JSX)
-vim.cmd("highlight jsxTag guifg=" .. colors.keyword)
-vim.cmd("highlight jsxComponentName guifg=" .. colors.type_declaration)
-vim.cmd("highlight jsxAttrib guifg=" .. colors.identifier)
-vim.cmd("highlight jsxString guifg=" .. colors.string)
-vim.cmd("highlight jsxExpression guifg=" .. colors.foreground)
-
-return colors
+setup_highlights()
