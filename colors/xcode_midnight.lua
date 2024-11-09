@@ -29,7 +29,7 @@ vim.cmd("highlight rubyModule guifg=" .. colors.keyword)
 vim.cmd("highlight rubyConstant guifg=" .. colors.constant)
 vim.cmd("highlight rubySymbol guifg=" .. colors.number)
 vim.cmd("highlight rubyStringDelimiter guifg=" .. colors.string)
-vim.cmd("highlight rubyInstanceVariable guibg=" .. colors.instance_variable)
+vim.cmd("highlight link rubyInstanceVariable guibg=" .. colors.instance_variable)
 
 -- HTML
 vim.cmd("highlight htmlTag guifg=" .. colors.keyword)
